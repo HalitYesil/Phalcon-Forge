@@ -9,4 +9,4 @@ Bu belge `agents/common/policy.md` icin Cursor odakli esleme dokumanidir.
 - Anti-rewrite kurali icin once `skill/phalcon-map/` ve `phalcondocs/index/` kontrol et.
 - Input verilerinde sanitize/validate adimlarini atlama.
 - Output uretirken escape kurallarini uygula.
-- Custom kod yazmadan once mevcut Phalcon cozumunu kontrol et.
+- custom kod yazmadan once mevcut Phalcon cozumunu kontrol et.

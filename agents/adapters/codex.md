@@ -9,4 +9,4 @@ Bu belge `agents/common/policy.md` icin Codex odakli esleme dokumanidir.
 - Docker runtime adimlarini `docker/` altindaki runbook ile eslestir.
 - Input akislarinda sanitize/validate uygula.
 - Output katmaninda escape ile XSS riskini azalt.
-- Custom cozumden once mevcut Phalcon capability'leri kullan.
+- custom cozumden once mevcut Phalcon capability'leri kullan.
