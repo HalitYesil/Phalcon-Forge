@@ -17,5 +17,5 @@ jobs:
           php-version: "8.3"
 
       - name: Run CI checks
-        shell: pwsh
-        run: ./scripts/ci-check.ps1
+        shell: bash
+        run: make ci

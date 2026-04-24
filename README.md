@@ -79,9 +79,9 @@ Kaynak kuralları: `docs/source-policy.md`
 ### 3) Index Üretim Komutları
 
 ```bash
-pwsh ./phalcondocs/scripts/sync-docs.ps1 -Version 5.9
-pwsh ./phalcondocs/scripts/sync-docs.ps1 -Version 5.11
-pwsh ./phalcondocs/scripts/build-index.ps1
+make docs-sync-59
+make docs-sync-511
+make docs-build
 ```
 
 ---
@@ -106,6 +106,8 @@ php mcp-server/server.php
 
 ## Hızlı Başlangıç
 
+> Gereksinimler: `php`, `git`, `bash`, `make`, `docker` (senaryo ihtiyacına göre)
+
 ### 1) Ortam değişkenleri
 
 ```bash
@@ -115,8 +117,8 @@ cp .env.example .env
 ### 2) Kalite ve release durumu
 
 ```bash
-pwsh ./scripts/ci-check.ps1
-pwsh ./scripts/release-status.ps1
+make ci
+make release-status
 ```
 
 ### 3) Docker ile ayağa kaldırma

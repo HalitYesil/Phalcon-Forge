@@ -13,6 +13,16 @@ Sunucu bulma ve kurulum sorunlarini Docker ile standartlastirmak.
 
 ## Otomasyon Scriptleri
 
+Oncelikli kullanim (Linux/Mac/Windows):
+
+- Docs senkronu: `make docs-sync-59` ve `make docs-sync-511`
+- Docs index rebuild: `make docs-build`
+- CI local check: `make ci`
+- Release status report: `make release-status`
+- MCP smoke test: `make smoke-mcp`
+
+PowerShell alternatifleri:
+
 - Docs senkronu: `pwsh ./phalcondocs/scripts/sync-docs.ps1 -Version 5.9`
 - Docs senkronu: `pwsh ./phalcondocs/scripts/sync-docs.ps1 -Version 5.11`
 - Docs index rebuild: `pwsh ./phalcondocs/scripts/build-index.ps1`
