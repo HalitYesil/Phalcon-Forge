@@ -23,7 +23,7 @@ Kabul kriteri:
 - [ ] Zorunlu klasorler: `app`, `public`, `config`, `tests`
 
 Kabul kriteri:
-- `pwsh ./scripts/check-starter-structure.ps1` basarili
+- `bash ./scripts/check-starter-structure.sh` veya `pwsh ./scripts/check-starter-structure.ps1` basarili
 
 ## 3) Guvenlik Baseline
 
@@ -33,7 +33,7 @@ Kabul kriteri:
 - [ ] Phalcon-first kurali aktif
 
 Kabul kriteri:
-- `pwsh ./scripts/check-phalcon-first.ps1` basarili
+- `bash ./scripts/check-phalcon-first.sh` veya `pwsh ./scripts/check-phalcon-first.ps1` basarili
 
 ## 4) MCP Sozlesmeleri ve Runtime
 
@@ -44,8 +44,8 @@ Kabul kriteri:
 - [ ] MCP smoke test geciyor
 
 Kabul kriteri:
-- `pwsh ./scripts/check-mcp-contracts.ps1` basarili
-- `pwsh ./scripts/smoke-mcp.ps1` basarili
+- `bash ./scripts/check-mcp-contracts.sh` veya `pwsh ./scripts/check-mcp-contracts.ps1` basarili
+- `bash ./scripts/smoke-mcp.sh` veya `pwsh ./scripts/smoke-mcp.ps1` basarili
 
 ## 5) PhalconDocs Index
 
@@ -55,8 +55,8 @@ Kabul kriteri:
 - [ ] Build script calisiyor
 
 Kabul kriteri:
-- `pwsh ./phalcondocs/scripts/build-index.ps1` basarili
-- `pwsh ./scripts/check-phalcondocs-index.ps1` basarili
+- `bash ./phalcondocs/scripts/build-index.sh` veya `pwsh ./phalcondocs/scripts/build-index.ps1` basarili
+- `bash ./scripts/check-phalcondocs-index.sh` veya `pwsh ./scripts/check-phalcondocs-index.ps1` basarili
 
 ## 6) Docker ve Operasyon
 
@@ -75,21 +75,21 @@ Kabul kriteri:
 - [ ] CI icinde PHP setup adimi var
 
 Kabul kriteri:
-- `pwsh ./scripts/ci-check.ps1` lokalde basarili
+- `make ci` veya `pwsh ./scripts/ci-check.ps1` lokalde basarili
 - PR CI job basarili
 
 ## Release Komutu (Onerilen Sira)
 
-1. `pwsh ./scripts/ci-check.ps1`
-2. `pwsh ./phalcondocs/scripts/build-index.ps1`
-3. `pwsh ./scripts/ci-check.ps1` (tekrar dogrulama)
+1. `make ci`
+2. `make docs-build`
+3. `make ci` (tekrar dogrulama)
 4. Version bump + changelog guncelleme
 5. `v0.1.0` tag
 
 ## Otomatik Durum Raporu
 
 - Tum release kontrollerini tek komutta ozetlemek icin:
-  - `pwsh ./scripts/release-status.ps1`
+  - `make release-status` (alternatif: `pwsh ./scripts/release-status.ps1`)
 
 ## v0.1 Scope Disi
 
