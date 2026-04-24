@@ -1,0 +1,20 @@
+{
+  "name": "doctor_runtime",
+  "description": "Docker/Phalcon runtime sagligini kontrol eder.",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "target": {
+        "type": "string",
+        "enum": ["dev", "test", "prod-like"]
+      },
+      "scenario": {
+        "type": "string",
+        "enum": ["basic", "invo", "rest", "vokuro"]
+      }
+    },
+    "required": ["target", "scenario"],
+    "additionalProperties": false
+  },
+  "outputSchemaPath": "schemas/output/doctor_runtime.output.schema.json"
+}

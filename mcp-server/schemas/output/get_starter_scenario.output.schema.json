@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "name": { "type": "string" },
+    "purpose": { "type": "string" },
+    "strengths": { "type": "array", "items": { "type": "string" } },
+    "risks": { "type": "array", "items": { "type": "string" } },
+    "bestFor": { "type": "array", "items": { "type": "string" } }
+  },
+  "required": ["name", "purpose"],
+  "additionalProperties": false
+}

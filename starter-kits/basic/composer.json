@@ -1,0 +1,13 @@
+{
+  "name": "phalcon-forge/basic-starter",
+  "description": "Basic Phalcon starter kit scaffold",
+  "type": "project",
+  "require": {
+    "php": "^8.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/"
+    }
+  }
+}

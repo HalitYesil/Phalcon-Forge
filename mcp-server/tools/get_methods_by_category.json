@@ -1,0 +1,23 @@
+{
+  "name": "get_methods_by_category",
+  "description": "Kategori ve alt kategoriye gore Phalcon metod envanterini doner.",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "category": {
+        "type": "string",
+        "enum": ["db", "orm", "business", "core", "services"]
+      },
+      "subcategory": {
+        "type": "string"
+      },
+      "version": {
+        "type": "string",
+        "description": "Phalcon version etiketi (orn: v5, v6)"
+      }
+    },
+    "required": ["category"],
+    "additionalProperties": false
+  },
+  "outputSchemaPath": "schemas/output/get_methods_by_category.output.schema.json"
+}

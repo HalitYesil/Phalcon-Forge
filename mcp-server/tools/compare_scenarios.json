@@ -1,0 +1,24 @@
+{
+  "name": "compare_scenarios",
+  "description": "Iki starter senaryoyu mimari ve guvenlik acisindan karsilastirir.",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "left": {
+        "type": "string",
+        "enum": ["basic", "invo", "rest", "vokuro"]
+      },
+      "right": {
+        "type": "string",
+        "enum": ["basic", "invo", "rest", "vokuro"]
+      },
+      "focus": {
+        "type": "string",
+        "enum": ["architecture", "security", "deployment"]
+      }
+    },
+    "required": ["left", "right", "focus"],
+    "additionalProperties": false
+  },
+  "outputSchemaPath": "schemas/output/compare_scenarios.output.schema.json"
+}

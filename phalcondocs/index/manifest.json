@@ -1,0 +1,33 @@
+{
+  "version": "0.1.0",
+  "source": "official",
+  "sourcePolicy": {
+    "mode": "strict_url_only",
+    "allowInference": false,
+    "allowCrossVersionMerge": false
+  },
+  "lockedSources": {
+    "repository": "https://github.com/phalcon/documentation.git",
+    "5.11": {
+      "branch": "5.11.x",
+      "introduction": "https://docs.phalcon.io/5.11/introduction/",
+      "localSnapshot": "sources/5.11/introduction.md"
+    },
+    "5.9": {
+      "branch": "5.9.x",
+      "introduction": "https://docs.phalcon.io/5.9/introduction/",
+      "localSnapshot": "sources/5.9/introduction.md"
+    },
+    "6.0": {
+      "branch": "6.0.x",
+      "status": "planned",
+      "enabled": false
+    }
+  },
+  "scenarios": ["basic", "invo", "rest", "vokuro"],
+  "indexes": {
+    "symbols": "index/symbols.json",
+    "methodsByCategory": "index/methods-by-category.json",
+    "scenarios": "index/scenarios.json"
+  }
+}

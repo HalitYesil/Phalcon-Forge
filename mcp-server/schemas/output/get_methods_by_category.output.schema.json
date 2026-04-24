@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "category": { "type": "string" },
+    "version": { "type": "string" },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "namespace": { "type": "string" },
+          "method": { "type": "string" },
+          "signature": { "type": "string" },
+          "scenarioHints": { "type": "array", "items": { "type": "string" } }
+        },
+        "required": ["namespace", "method"],
+        "additionalProperties": true
+      }
+    }
+  },
+  "required": ["category", "items"],
+  "additionalProperties": false
+}

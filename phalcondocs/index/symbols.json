@@ -1,0 +1,31 @@
+{
+  "sourcePolicy": {
+    "strictUrlOnly": true,
+    "allowInference": false,
+    "allowCrossVersionMerge": false
+  },
+  "versions": {
+    "5.11": {
+      "sourceUrl": "https://docs.phalcon.io/5.11/introduction/",
+      "repositoryBranch": "5.11.x",
+      "symbols": [
+        {
+          "name": "Phalcon",
+          "type": "namespace",
+          "note": "Introduction page states that framework interface is exposed as PHP classes under Phalcon namespace."
+        }
+      ]
+    },
+    "5.9": {
+      "sourceUrl": "https://docs.phalcon.io/5.9/introduction/",
+      "repositoryBranch": "5.9.x",
+      "symbols": [
+        {
+          "name": "Phalcon",
+          "type": "namespace",
+          "note": "Introduction page states that framework interface is exposed as PHP classes under Phalcon namespace."
+        }
+      ]
+    }
+  }
+}

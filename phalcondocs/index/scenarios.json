@@ -1,0 +1,26 @@
+{
+  "basic": {
+    "purpose": "Minimal MVC/DI/router baslangici",
+    "strengths": ["hizli kurulum", "dusuk karmasiklik"],
+    "risks": ["buyumede controller sisme riski"],
+    "bestFor": ["prototype", "small web app"]
+  },
+  "invo": {
+    "purpose": "Domain odakli moduler is uygulamasi",
+    "strengths": ["katmanli mimari", "test edilebilirlik"],
+    "risks": ["ilk kurulum maliyeti basic'ten yuksek"],
+    "bestFor": ["business workflows", "medium-large teams"]
+  },
+  "rest": {
+    "purpose": "API-first servis katmani",
+    "strengths": ["json contract", "istemci bagimsizligi"],
+    "risks": ["auth/rate-limit katmanlari sonradan eklenmeli"],
+    "bestFor": ["mobile backend", "spa backend"]
+  },
+  "vokuro": {
+    "purpose": "Auth/session/security odakli baslangic",
+    "strengths": ["login-logout akisi", "session guard"],
+    "risks": ["domain ayrimi sonradan netlestirilmeli"],
+    "bestFor": ["membership sites", "admin portals"]
+  }
+}

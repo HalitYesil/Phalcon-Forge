@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "left": { "type": "string" },
+    "right": { "type": "string" },
+    "focus": { "type": "string" },
+    "differences": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "aspect": { "type": "string" },
+          "leftValue": { "type": "string" },
+          "rightValue": { "type": "string" },
+          "note": { "type": "string" }
+        },
+        "required": ["aspect"],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": ["left", "right", "focus", "differences"],
+  "additionalProperties": false
+}

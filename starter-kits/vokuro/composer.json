@@ -1,0 +1,13 @@
+{
+  "name": "phalcon-forge/vokuro-starter",
+  "description": "Vokuro-style Phalcon auth starter kit scaffold",
+  "type": "project",
+  "require": {
+    "php": "^8.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/"
+    }
+  }
+}

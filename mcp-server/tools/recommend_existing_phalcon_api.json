@@ -1,0 +1,24 @@
+{
+  "name": "recommend_existing_phalcon_api",
+  "description": "Use-case'e uygun mevcut Phalcon class/metod onerileri sunar.",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "use_case": {
+        "type": "string"
+      },
+      "constraints": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "version": {
+        "type": "string"
+      }
+    },
+    "required": ["use_case"],
+    "additionalProperties": false
+  },
+  "outputSchemaPath": "schemas/output/recommend_existing_phalcon_api.output.schema.json"
+}

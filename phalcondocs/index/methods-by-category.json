@@ -1,0 +1,14 @@
+{
+  "orm": [
+    {
+      "namespace": "Phalcon\\Mvc\\Model",
+      "method": "save",
+      "signature": "save(): bool",
+      "scenarioHints": ["basic", "invo"]
+    }
+  ],
+  "db": [],
+  "business": [],
+  "core": [],
+  "services": []
+}

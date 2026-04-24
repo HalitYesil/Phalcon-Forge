@@ -1,0 +1,16 @@
+{
+  "name": "get_starter_scenario",
+  "description": "Basic, Invo, REST, Vokuro senaryolarinin ozetini doner.",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "name": {
+        "type": "string",
+        "enum": ["basic", "invo", "rest", "vokuro"]
+      }
+    },
+    "required": ["name"],
+    "additionalProperties": false
+  },
+  "outputSchemaPath": "schemas/output/get_starter_scenario.output.schema.json"
+}
